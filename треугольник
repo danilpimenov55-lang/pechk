@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+
+int drawOneLine(int nstars){
+	int i;          /* номер печатаемой звездочки, счетчик */
+	
+	for(i=0; i < nstars; i++){ /*  n звездочек подряд  */
+		putchar('*');
+	putchar('\n');             /*  переход на следующую строку */
+	}
+	}
+
+int main(){
+	/* ОБЪЯВЛЕНИЕ ПЕРЕМЕННЫХ */
+	int nline;
+	for(nline=1; nline <= 25; nline++)
+		drawOneLine(nline);
+	return 0;
+}
