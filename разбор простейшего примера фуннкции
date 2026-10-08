@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int f1(int x, int y){
+	return (x + y*2);
+}
+
+int f2(int x){
+	int z;
+	
+	z = x+7;
+	return 2*z;
+}
+
+int main(){
+	/* Объявления переменных */
+	int a, b, c;
+	
+	/* Операторы */
+	a = 5; b = 6;
+	
+	c = f1(a, b+3);
+	b = f1(1, 2);
+	a = f2(c);
+	
+	printf("A есть %d B есть %d C есть %d\n", a, b, c);
+}
