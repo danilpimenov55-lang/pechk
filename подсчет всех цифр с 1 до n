@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+	int a;
+	int i;
+	int k;
+	scanf("%d",&a);
+	for(i=1;i<=a;i=i+1){
+		printf("%d",i);
+		k=k+i;
+		putchar('\n');
+		
+	}
+	putchar('\n');
+	printf("%d",k);
+	return 0;
+}
