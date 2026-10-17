@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+	int a;
+	int i;
+	int pe=0;
+	scanf("%d",&a);
+	for(i=1;i<=a;i=i+1){
+	if(i%2==0){
+		pe=pe+i;
+		printf("%d",i);
+		printf("|%d|",pe);
+		putchar('\n');
+	}
+	}
+		
+	printf("%d",pe);
+	return 0;
+}
