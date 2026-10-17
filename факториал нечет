@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+	int a;
+	long long int b=1;
+	int i;
+	int k;
+	scanf("%d",&a);
+	for(i=1;i<=a;i=i+1){
+		k=i;
+		b=b*k;
+		if(i%2==1 ){printf("%lld",b);putchar('\n');}
+		
+	}
+	return 0;
+}
