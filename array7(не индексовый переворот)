@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+	int n;
+	int j;
+	int i;
+	int arr[100];
+	printf("N:");
+	scanf("%d",&n);
+	int k=n;
+	for(j=1;j<n;j=j+1){arr[j]=j;printf("%d ",arr[j]);}
+	putchar('\n');
+	for (i=1;i<n;i++){k=k-1;printf("|%d|",arr[k]);}		
+	
+	
+	
+	return 0;
+}
