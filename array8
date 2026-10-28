@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+	int n;
+	int j;
+	int i;
+	int arr[100];
+	printf("N:");
+	scanf("%d",&n);
+	int k=1;
+	for(j=0,k=0;;k=k+1){
+		if (k%2==1){
+		arr[j]=k;
+		printf("%d ",arr[j]);
+		j=j+1;
+			if(j==n){break;}
+		}
+	}
+	putchar('\n');
+	printf("their number: %d\n",j);
+printf("Index check %d",arr[3]);// если верно то индекс 2 равен 5 (1, 3, |5|)
+//                                                                (0, 1, |2|) номер индекса
+	return 0;
+}
