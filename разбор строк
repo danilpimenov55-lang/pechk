@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+char string[20];
+char a;
+string[0] = 'H';
+string[1] = 'e';
+string[2] = 'l';
+string[3] = 'l';
+string[4] = 'o';
+string[5] = '!';
+string[6]='?';
+string[7] = '\0';
+a=string[6];  //важно!!
+string[6]=a; //важно!!
+
+printf(string,a);
+}
