@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void)
+{
+	char * mail="Privet Maria you are the best <3\nP.S.\nI am really liek your haircut";
+	char * filem="message_to_Maria.txt";
+	FILE * fp=fopen(filem,"w");
+	if(fp){
+		fputs(mail,fp);
+		fclose(fp);
+		printf("file written");
+	}
+	
+	return 0;
+}
